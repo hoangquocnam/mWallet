@@ -2773,6 +2773,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@tsconfig/react-native@npm:^2.0.3":
+  version: 2.0.3
+  resolution: "@tsconfig/react-native@npm:2.0.3"
+  checksum: 10/757edb4435a12d4ece9cf61c010df3dab771fbf6065c5b03445ecf440398df641d2859fc3ace3790a1f07eca990f54d16912fab59f144090871bf70612f47a80
+  languageName: node
+  linkType: hard
+
 "@types/babel__core@npm:^7.1.14":
   version: 7.20.5
   resolution: "@types/babel__core@npm:7.20.5"
@@ -8362,6 +8369,7 @@ __metadata:
     "@react-navigation/drawer": "npm:^6.6.15"
     "@react-navigation/native": "npm:^6.1.17"
     "@react-navigation/stack": "npm:^6.3.29"
+    "@tsconfig/react-native": "npm:^2.0.3"
     "@types/react": "npm:^18.2.6"
     "@types/react-native-vector-icons": "npm:^6.4.13"
     "@types/react-test-renderer": "npm:^18.0.0"

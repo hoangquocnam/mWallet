@@ -7,7 +7,12 @@
     "ios": "react-native run-ios",
     "lint": "eslint .",
     "start": "react-native start",
-    "test": "jest"
+    "test": "jest",
+    "testChanged": "jest --watch --coverage=false --changedSince=origin/master",
+    "typecheck": "./node_modules/.bin/tsc",
+    "prepare": "husky install",
+    "pod:silicon": "cd ios && arch -x86_64 pod install && cd ..",
+    "ios:silicon": "arch -x86_64 react-native run-ios"
   },
   "dependencies": {
     "@aashu-dubey/react-native-rating-bar": "^0.2.0",
@@ -33,6 +38,7 @@
     "@react-native/eslint-config": "0.74.84",
     "@react-native/metro-config": "0.74.84",
     "@react-native/typescript-config": "0.74.84",
+    "@tsconfig/react-native": "^2.0.3",
     "@types/react": "^18.2.6",
     "@types/react-native-vector-icons": "^6.4.13",
     "@types/react-test-renderer": "^18.0.0",

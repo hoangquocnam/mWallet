@@ -1,6 +1,6 @@
 import React from 'react';
 import { Pressable, StyleProp, ViewStyle, PressableProps } from 'react-native';
-import Config from '../Config';
+import Config from '../configs/common';
 
 interface Props extends PressableProps {
   style?: StyleProp<ViewStyle>;

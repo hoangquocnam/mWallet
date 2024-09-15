@@ -1,3 +1,24 @@
 {
-  "extends": "@react-native/typescript-config/tsconfig.json"
+  "extends": "@tsconfig/react-native/tsconfig.json",
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "allowJs": false,
+    "strict": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "incremental": true,
+    "noEmit": true,
+    "noImplicitAny": false,
+    "paths": {
+      "@/*": ["./src/*"],
+      "react": ["./node_modules/@types/react"]
+    },
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "target": "ES2022",
+    "typeRoots": ["types"],
+    "types": ["node"]
+  },
+  "exclude": ["node_modules"]
 }

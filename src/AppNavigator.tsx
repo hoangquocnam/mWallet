@@ -10,9 +10,9 @@ import {
   FeedbackScene,
   InviteFriendScene,
 } from '.';
-import { CourseInfoScreen, HomeDesignCourse } from './design_course';
-import { IntroductionAnimationScreen } from './introduction_animation';
-import HotelHomeScreen from './hotel_booking/HotelHomeScreen';
+import { CourseInfoScreen, HomeDesignCourse } from './screens/design_course';
+import { IntroductionAnimationScreen } from './screens/introduction_animation';
+import HotelHomeScreen from './screens/hotel_booking/HotelHomeScreen';
 
 const Drawer = createDrawerNavigator();
 /**
@@ -64,9 +64,7 @@ export default () => {
 
       <Stack.Navigator screenOptions={{ headerShown: false }}>
         <Stack.Screen name="MainDrawer" component={DrawerNavigator} />
-
         <Stack.Screen name="Hotel" component={HotelHomeScreen} />
-
         <Stack.Group>
           <Stack.Screen name="DesignCourse" component={HomeDesignCourse} />
           <Stack.Screen name="CourseInfo" component={CourseInfoScreen} />
